@@ -3,15 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <title>FORM STYLING</title>
+    <style>
+        #subscribe-form {
+            background-color: #003d66 ;
+            padding: 20px
+            
+        }
+        .form-heading{
+            color: azure;
+            font-size: 27px;
+
+        }
+        .input-email{
+            font-size: 30px;
+            padding: 10px;
+            padding-left: 50px;
+            border: none;
+            width: 450px; 
+            background-image: url(at\ \(1\).svg); 
+            background-size: 50px;
+            background-repeat: no-repeat;
+        }
+        
+        .button-subscribe{
+            font-size: 30px; 
+            padding: 10px;
+            background-color: rgb(20, 137, 214);
+            background-image: url(email-arrow-right.svg);
+            background-size: 50px 50px;
+            background-repeat: no-repeat;
+            border: none;
+            background-position: center;
+            color: transparent;
+        
+        } 
+            
+        .input-cheak{
+            font-size: 2px;
+            padding: 10px;
+            background-image: url(check-bold.svg);
+            background-size: 20px;
+            background-repeat: no-repeat;
+            border: none;
+            background-position: center;
+        
+         }
+
+   
+           
+            </style>
 </head>
 <body>
-    <form action="/url">
+    <form action="/url" id="subscribe-form">
+        <h2 class="form-heading">Join our newsletter</h2>
         <label>
             <input type="text"
             placeholder="e.g;jonh.doe@example.com"
-            >
-        </label>
+            required
+            autofocus
+            class="input-email">
 
+        </label>
+        <button class="button-subscribe">
+            send
+    </button>
+    <input type="text"
+           required
+           autofocus
+           class="input-cheak">
 
     </form>
 </body>
