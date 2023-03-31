@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: #333;
+            font-family: Arial ;
+            color: white;
+        } 
+        
+        label{ 
+            display: block;
+            width: 320px;
+            padding: 10px;
+            margin: 20px;
+            background-color: #666;
+        } 
+        input{
+            padding: 5px;
+            outline: none; 
+            background-color: aliceblue;
+        }
+
+            input:focus  {
+                border: 1px solid blue;
+                background-color:#fff ;
+               }
+
+               input:invalid{
+                border-color: red;
+               }
+
+               small{
+                display: block;
+                font-size: 11px;
+                color: rgb(87, 2, 2);
+                margin-top: 10px;
+                text-align: right;
+                }
+             
+
+            .name {
+                display: block;
+                font-size: 11px;
+                color: rgb(133, 18, 18);
+               
+            
+             }
+
+        
+
+                
+              
+
+           
+       
+    </style>
+</head>
+<body>
+    <form action="URL">
+        <br>
+        <label>
+            Your Full Name
+            <input type="text" 
+            placeholder="e.g..: John Doe"
+            pattern="[A-Z]+ [a-z] [a-z]+$"
+          >
+       
+        <small>
+            <img src="exclamation.svg" width="20px" >
+            You mast enter the name as two capitalized words 
+            like;<h class="name ">John Doe,Marry Popins,Vlad Tapes,etc.</h>
+           
+        </small>
+ </label>
+        <br>
+        <br>
+        <button>SEND</button>
+    </form>
+</body>
+</html>
