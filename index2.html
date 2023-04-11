@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BUTTON EFFECT</title>
+    <style>
+        body {
+            background-color: rgba(0, 136, 255, 0.91);
+        }
+        .button{
+            margin:20px ;
+             display: inline-block;
+          
+            font-family: Arial;
+            font-weight: bold;
+
+        }
+
+        .button a{
+            text-decoration: none;
+            display: inline-block;
+            background-color: #fff;
+            padding: 10px 15px 7px 15px;
+            border-radius: 50px;
+            color: lightblue;
+            box-shadow: 0 0 3px 1px blue;
+        }
+        .button a::before{
+            content: " ";
+            display: inline-block;
+            vertical-align: middle;
+            width: 30px;
+            height: 30px;
+            background-color: white;
+            background-image: url(cloud_download.svg);
+            background-size: contain;
+            background-position: 0 -2px;
+            margin-right: 10px;
+            border-radius: 50px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+ <div class="button">
+    <a href="">DOWNLOAD</a>
+ </div>
+</body>
+</html>
